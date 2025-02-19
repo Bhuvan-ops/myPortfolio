@@ -1,0 +1,22 @@
+version: '3'
+services:
+  myportfolio1:
+    build: .
+    environment:
+     - APP_NAME=myPortfolio1
+    ports:
+     - "3001:3000"
+
+  myportfolio2:
+      build: .
+      environment:
+      - APP_NAME=myPortfolio2
+      ports:
+      - "3002:3000"
+
+  myportfolio3:
+    build: .
+    environment:
+     - APP_NAME=myPortfolio3
+    ports:
+     - "3003:3000"
